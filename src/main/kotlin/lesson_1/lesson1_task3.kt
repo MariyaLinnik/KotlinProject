@@ -1,19 +1,16 @@
 package org.example.lesson_1
 
-import java.lang.String.format
-
-
 fun main(){
-    val year: Int = 1961
-    var hour: Int = 9
-    var minute: Int = 7
+    val year: String = "1961"
+    var hour: String = "9".padStart(2, '0')
+    var minute: String = "7".padStart(2, '0')
 
     println("Год полета - $year")
-    print("Взлет - " + format("%02d:",hour))
-    println(format("%02d",minute))
+    print("Взлет - $hour:")
+    println(minute)
 
-    hour= 10
-    minute = 55
+    hour= "10"
+    minute = "55"
 
-    print("Посадка – " + format("%02d:%02d", hour, minute))
+    print("Посадка – $hour:$minute")
 }
