@@ -16,7 +16,7 @@ private const val PERCENTAGE_BUFF = 0.20
 
 fun  main() {
     val crystallineOreWithoutBuff = 7
-    val ironOreWithoutBuff= 11
+    val ironOreWithoutBuff = 11
 
     val bonusCrystallineOre = crystallineOreWithoutBuff * PERCENTAGE_BUFF
     val bonusIronOre = ironOreWithoutBuff * PERCENTAGE_BUFF
