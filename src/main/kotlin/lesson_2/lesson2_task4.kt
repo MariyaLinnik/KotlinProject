@@ -12,15 +12,15 @@ package org.example.lesson_2
 Если получается нецелое число, то дробная часть должна отбрасываться.
 */
 
-private const val PERCENTAGE_BUFF = 0.20
 
-fun  main() {
+fun main() {
     val crystallineOreWithoutBuff = 7
     val ironOreWithoutBuff = 11
+    val percentageBaff = 20
 
-    val bonusCrystallineOre = crystallineOreWithoutBuff * PERCENTAGE_BUFF
-    val bonusIronOre = ironOreWithoutBuff * PERCENTAGE_BUFF
+    val bonusCrystallineOre = (crystallineOreWithoutBuff * percentageBaff) / 100
+    val bonusIronOre = (percentageBaff * ironOreWithoutBuff) / 100
 
-    println("'Бонусная' кристаллическая руда = ${bonusCrystallineOre.toInt()}")
-    println("'Бонусная' железная руда = ${bonusIronOre.toInt()}")
+    println("'Бонусная' кристаллическая руда = $bonusCrystallineOre")
+    println("'Бонусная' железная руда = $bonusIronOre")
 }
