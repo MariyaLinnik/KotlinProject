@@ -19,7 +19,7 @@ package org.example.lesson_1
 Подсказка для вывода: какой метод печати в консоль не делает перенос в конце строки?
 */
 
-fun main(){
+fun main() {
     val year: String = "1961"
     var hour: String = "09"
     var minute: String = "07"
@@ -28,7 +28,7 @@ fun main(){
     println("Взлет - часы: $hour")
     println("минуты: $minute")
 
-    hour= "10"
+    hour = "10"
     minute = "55"
 
     print("Посадка – $hour:$minute")
